@@ -17,7 +17,7 @@
       "--islands-item-radius": "6px",
       "--islands-panel-gap": "6px",
       "--islands-panel-top": "6px",
-      "--islands-bg-canvas": "#121216",
+      "--islands-bg-canvas": "#131217",
       "--islands-bg-surface": "#181a1d",
       "background-color": "var(--islands-bg-canvas) !important"
    },
@@ -57,7 +57,7 @@
       "outline-offset": "-1px !important"
    },
    ".explorer-viewlet .split-view-container": {
-      "margin-top": "-22px !important"
+      "margin-top": "0 !important"
    },
    ".part.sidebar .header": {
       "padding-right": "20px !important"
@@ -238,21 +238,45 @@
       "overflow": "hidden !important",
       "box-sizing": "border-box !important",
       "background-color": "var(--islands-bg-surface) !important",
-      "border-top": "6px solid var(--islands-bg-canvas) !important",
+      "border-top": "4px solid var(--islands-bg-canvas) !important",
       "border-left": "var(--islands-panel-gap) solid var(--islands-bg-canvas) !important",
       "border-right": "var(--islands-panel-gap) solid var(--islands-bg-canvas) !important",
       "border-bottom": "none !important",
       "box-shadow": "inset 0 1px 0 0 rgba(255,255,255,0.1), inset 1px 0 0 0 rgba(255,255,255,0.06), inset -1px 0 0 0 rgba(255,255,255,0.02) !important"
+   },
+   ".part.panel.bottom.koda-open": {
+      "border-top": "0px !important"
    },
    ".part.panel.bottom > .composite.title": {
       "position": "relative !important",
       "z-index": "1 !important"
    },
    ".part.panel.bottom > .content": {
-      "margin-top": "-6px !important",
+      "margin-top": "0 !important",
       "position": "relative !important",
       "border-radius": "0 0 calc(var(--islands-panel-radius) - var(--islands-panel-gap)) calc(var(--islands-panel-radius) - var(--islands-panel-gap)) !important",
       "overflow": "hidden !important"
+   },
+   "// AI Chat panels - fixes for neural network extensions":
+   {},
+   ".part.panel.bottom .chat-view": {
+      "height": "100% !important"
+   },
+   ".part.panel.bottom .chat-session-view": {
+      "height": "100% !important"
+   },
+   ".part.panel.bottom .inline-chat-widget": {
+      "margin-top": "0 !important"
+   },
+   ".part.panel.bottom .interactive-session": {
+      "height": "100% !important"
+   },
+   ".part.panel.bottom .ai-conversations-panel": {
+      "height": "100% !important"
+   },
+   ".part.panel.bottom .session-content": {
+      "height": "100% !important",
+      "max-height": "none !important"
    },
    ".part.panel.bottom .pane": {
       "border-bottom": "none !important"
@@ -323,7 +347,7 @@
       "box-shadow": "inset 0 1px 3px 0 rgba(255,255,255,0.06), 0 1px 4px 0 rgba(0,0,0,0.3) !important"
    },
    ".part.activitybar .content > div:last-child": {
-      "transform": "translateY(-10px) !important"
+      "transform": "translateY(0px) !important"
    },
    ".part.activitybar .action-item .action-label": {
       "font-size": "28px !important",
@@ -390,7 +414,7 @@
       "color": "#9a9ea5 !important"
    },
    ".part.statusbar .items-container": {
-      "margin-top": "-2px !important"
+      "margin-top": "0 !important"
    },
    ".monaco-icon-label.file-icon::before": {
       "filter": "drop-shadow(0 0 2.5px currentColor)",
@@ -554,14 +578,71 @@
       "border-left": "1px solid rgba(255,255,255,0.06) !important",
       "border-bottom": "1px solid rgba(255,255,255,0.02) !important",
       "border-right": "1px solid rgba(255,255,255,0.02) !important",
-      "overflow": "hidden !important"
+      "overflow": "hidden !important",
+      "margin-bottom": "0 !important",
+      "padding-bottom": "0 !important"
    },
    ".chat-input-container .monaco-inputbox": {
       "background-color": "var(--islands-bg-surface) !important"
    },
+   ".chat-input-container .text-area-wrapper": {
+      "margin-bottom": "0 !important"
+   },
    ".interactive-input-part": {
       "border-radius": "var(--islands-widget-radius) !important",
-      "overflow": "hidden !important"
+      "overflow": "hidden !important",
+      "margin-bottom": "0 !important"
+   },
+   ".interactive-input-part .input-editor": {
+      "min-height": "auto !important"
+   },
+   "// AI Chat panels - Koda, Copilot, Claude, etc.":
+   {},
+   ".part.panel.bottom [class*='koda']": {
+      "margin-top": "0 !important",
+      "transform": "translateY(0) !important"
+   },
+   ".part.panel.bottom .koda-chat-container": {
+      "margin-top": "0 !important",
+      "padding-top": "0 !important",
+      "padding-bottom": "0 !important"
+   },
+   ".part.panel.bottom .koda-input-wrapper": {
+      "margin-top": "0 !important",
+      "margin-bottom": "0 !important",
+      "padding-bottom": "0 !important",
+      "transform": "translateY(-24px) !important"
+   },
+   ".part.panel.bottom .koda-conversation-panel": {
+      "height": "100% !important"
+   },
+   ".part.panel.bottom .koda-text-input": {
+      "margin-bottom": "0 !important",
+      "padding-bottom": "0 !important"
+   },
+   ".part.panel.bottom .koda-input-field": {
+      "margin-bottom": "0 !important",
+      "transform": "translateY(-8px) !important"
+   },
+   ".part.panel.bottom [class*='chat']": {
+      "margin-top": "0 !important",
+      "padding-top": "0 !important"
+   },
+   ".part.panel.bottom .chat-widget": {
+      "margin-top": "0 !important"
+   },
+   ".part.panel.bottom .inline-chat": {
+      "margin-top": "0 !important",
+      "transform": "translateY(0) !important"
+   },
+   ".part.panel.bottom .ai-chat": {
+      "margin-top": "0 !important"
+   },
+   ".part.panel.bottom .conversation-view": {
+      "margin-top": "0 !important"
+   },
+   ".part.panel.bottom .monaco-inputbox": {
+      "margin-bottom": "0 !important"
    },
 
    ".monaco-button-dropdown-separator": {

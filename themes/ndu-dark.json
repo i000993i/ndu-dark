@@ -1,5 +1,5 @@
 {
-  "name": "ndu-dark",
+  "name": "ndu-dark-fix",
   "type": "dark",
   "colors": {
     "focusBorder": "#548af7",
@@ -55,6 +55,10 @@
     "badge.foreground": "#ffffff",
 
     "progressBar.background": "#548af7",
+    "progressBar.foreground": "#548af7",
+    "progressBar.border": "#25324d",
+
+    "statusBarItem.pressAndHoldBackground": "#548af7",
 
     "list.activeSelectionBackground": "#25262a90",
     "list.activeSelectionForeground": "#bcbec4",
